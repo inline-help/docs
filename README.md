@@ -1,4 +1,4 @@
-## Inline Help API documents
+## Inline Help API documentation
 
 In the following the api to create Help Tips.
 

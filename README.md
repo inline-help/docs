@@ -38,7 +38,7 @@ An help tip json object will be like this:
   }
 ```
 
-Where the parameter is:
+### Parameters
 
 - **code** - a client custom code
 - **lang** - it's a project language (ie: it, en, de...)
@@ -52,4 +52,23 @@ Where the parameter is:
 - **style** - theme style for icons
 - **project_uuid** - it's tips aggregator
 - **tags** - can be usefull to aggregate tips by short name
+
+
+### How to get helptips
+- method: GET 
+- path: /helptips
+- authorization: Bearer xxxxxx
+
+### Query parameters to paginate:
+- startRow (default 0)
+- pageSize (default 10)
+- orderBy (default orderBy title asc)
+
+### Query parameters to filtering:
+- obj.uuid (to find a specific helptip by uuid) => equivalent to GET /helptips/{uuid}
+- obj.project_uuid => by specific **project uuid**
+- obj.code  => by specific **code**
+- obj.lang => by specific **lang**
+- obj.tags => by specific **lang**
+- like.title => by specific **lang**
 

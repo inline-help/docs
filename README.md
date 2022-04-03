@@ -69,6 +69,6 @@ An help tip json object will be like this:
 - obj.project_uuid => by specific **project uuid**
 - obj.code  => by specific **code**
 - obj.lang => by specific **lang**
-- obj.tags => by specific **lang**
-- like.title => by specific **lang**
+- like.tags => like as **tag**
+- like.title => like as **title**
 

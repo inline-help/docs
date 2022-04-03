@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Inline Help API documents
 
 You can use the [editor on GitHub](https://github.com/inline-help/docs/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 

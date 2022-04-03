@@ -1,7 +1,7 @@
 name: Inline Helper API
 title: Inline Helper API
 logo: /assets/inline-logo.png
-show_downloads: true
+show_downloads: false
 description: API minimal documentation
 theme: jekyll-theme-minimal
 domain: docs.inline.help       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com

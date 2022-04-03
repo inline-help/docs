@@ -2,7 +2,7 @@
 
 In the following the api to create Help Tips.
 
-base url: https://api.inline.help/api/v1/
+**base url**: https://api.inline.help/api/v1/
 
 ### Security
 

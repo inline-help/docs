@@ -41,6 +41,9 @@ An help tip json object will be like this:
 Where the parameter is:
 
 - **code** - a client custom code
+- **lang** - it's a project language (ie: it, en, de...)
+- **type** - ABSOLUTE, CSS, XPATH
+- **direction** - UNDER, BOTTOM, RIGHT, LEFT
 - **position** - the absolute coordinate inside page
 - **title** - help titp title
 - **preview** - short text to show when the mouse go ahead of the icon
@@ -50,17 +53,3 @@ Where the parameter is:
 - **project_uuid** - it's tips aggregator
 - **tags** - can be usefull to aggregate tips by short name
 
-## languages
-
-It depends from the project options, normally: en, it...
-
-## type values
-- ABSOLUTE
-- CSS
-- XPATH
-
-## direction values
-- UNDER
-- BOTTOM
-- RIGHT
-- LEFT

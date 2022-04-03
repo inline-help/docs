@@ -1,37 +1,55 @@
 ## Inline Help API documents
 
-You can use the [editor on GitHub](https://github.com/inline-help/docs/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+In the following the api to create Help Tips.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+base url: https://api.inline.help/api/v1/
 
-### Markdown
+### Security
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+We will use JWT token from our SSO server:
+- https://sso.inline.help
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### How to create helptips
+- method: POST 
+- path: /helptips
+- authorization: Bearer xxxxxx
 
-- Bulleted
-- List
+Where xxxxxx is the access_token that you received after loign.
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+An help tip json object will be like this:
 
-[Link](url) and ![Image](src)
+```json
+{
+    "code":"101",
+    "lang":"it",
+    "type":"XPATH",
+    "direction":"UNDER",
+    "position":"xxxx",
+    "title":"title",
+    "preview":"preview content",
+    "body":"body content",
+    "uri":"https://uri.to/use",
+    "style":"minimal-theme",
+    "icon":"fa-box",
+    "project_uuid":"69959754-7e91-466e-a4b5-22e1fc8096f8",
+    "tags":"a,b,c"
+  }
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+## languages
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/inline-help/docs/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+It depends from the project options, normally: en, it...
 
-### Support or Contact
+## type values
+- ABSOLUTE
+- CSS
+- XPATH
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## direction values
+- UNDER
+- BOTTOM
+- RIGHT
+- LEFT

@@ -38,6 +38,17 @@ An help tip json object will be like this:
   }
 ```
 
+Where the parameter is:
+
+- **code** - a client custom code
+- **position** - the absolute coordinate inside page
+- **title** - help titp title
+- **preview** - short text to show when the mouse go ahead of the icon
+- **body** - long text to show opening the tip
+- **uri** - uri page that will show the tips with same uri
+- **style** - theme style for icons
+- **project_uuid** - it's tips aggregator
+- **tags** - can be usefull to aggregate tips by short name
 
 ## languages
 

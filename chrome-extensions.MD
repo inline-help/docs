@@ -9,3 +9,6 @@ some links to reuse:
 
 old:
 - https://github.com/just-jeb/angular-chrome-extension
+
+dom search:
+- https://developer.chrome.com/docs/devtools/dom?hl=it#search
